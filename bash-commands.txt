@@ -5,3 +5,6 @@ grep foobarzet file_to_grep.log  | cat -n | tail -n +281 | awk '{$1=""; print $0
 > tail -n +281 				// prints lines starting at 281 to the end of file
 
 > awk '{$1=""; print $0}'		// removes first column from output
+
+// Change author on git commit
+> git commit --amend --author="Author Name <email@address.com>"
