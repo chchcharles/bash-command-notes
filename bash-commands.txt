@@ -1,0 +1,7 @@
+grep foobarzet file_to_grep.log  | cat -n | tail -n +281 | awk '{$1=""; print $0}'
+
+> cat -n 					// print file with line numbers
+
+> tail -n +281 				// prints lines starting at 281 to the end of file
+
+> awk '{$1=""; print $0}'		// removes first column from output
